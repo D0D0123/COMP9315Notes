@@ -108,7 +108,7 @@ for t in P[oldsp] and overFlowPages(P[oldsp]):
         bucket[oldsp].add(t)
 
 sp += 1
-if isPowerOf2(sp):
+if sp == 2 ** d:
     d += 1
     sp = 0
 ```

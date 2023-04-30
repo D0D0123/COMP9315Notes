@@ -1,0 +1,16 @@
+{ 
+   "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gdb (Launch)",
+            "type": "cppdbg",
+            "request": "launch",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "miDebuggerArgs": "--cd=${workspaceFolder}/",
+            "args": [],
+            "MIMode": "gdb",
+            "program": "${workspaceFolder}/app",
+            "cwd": "${workspaceFolder}/"
+        }
+    ]
+}
