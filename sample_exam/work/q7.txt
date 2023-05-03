@@ -3,5 +3,17 @@
 Type your answer(s) to replace the xxx's
 Submit this file as your answer for Q7
 
+a. Sel[c=5 && d=8]s
+b. (Proj[a, c]R) Join[R.c = S.c] (Proj[c, d]S)
 
-xxx
+c. 
+Tmp1 = Proj[c](Sel[d = 3]S)
+Res = Sel[c in Tmp1]R
+
+d.
+
+Tmp1 = (Sel[b = 2]R) Join[R.c = S.c] (Sel[c = 5]S)
+Tmp2 = (Sel[e = 10]T) Join[Tmp1.d = T.d] Tmp1
+
+Res = Proj[a, f, g]Tmp2
+

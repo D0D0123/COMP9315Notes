@@ -4,4 +4,22 @@ Type your answer(s) to replace the xxx's
 Submit this file as your answer for Q8
 
 
-xxx
+desc(q) = 0100010100
+
+start with matching = 11111111
+
+bits 1, 5, 7 are set to '1' in desc(q)
+
+therefore, fetch slices
+
+[1] 10100101
+[5] 11101001
+[7] 10100001
+
+matching = 11111111 & 10100101 = 10100101
+matching = 10100101 & 11101001 = 10100001
+matching = 10100001 & 10100001 = 10100001
+
+bits 0, 2, 7 are set to '1' in matching
+
+fetch pages 0, 2, 7

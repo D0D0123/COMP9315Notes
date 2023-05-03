@@ -6,17 +6,15 @@ Submit this file as your answer for Q4
 
 a.
 
-xxx
-R = xxx
+
+R = header + fields = 4 + (4 + 8 + 8)
+  = 24 bytes 
 
 
 b.
 
-xxx
-c = xxx
-
+c = floor((B - header) / R) = floor(4000 / 24) = 166 tuples per page
 
 c.
 
-xxx
-b = xxx
+b = ceil(r / c) = ceil(10000 / 166) = 61 pages required
